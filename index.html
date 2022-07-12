@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0c84c2f738.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>NAPS</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fw-bolder">
+            <a class="navbar-brand ms-5" href="#">NAPS</a>
+            <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#package-section">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#q&a">Q&A</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Carousal -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner-min.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/spotify-banner-min.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vpn-banner-min.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Features -->
+    <div class="container-fluid">
+
+        <div class="all-items  container text-light mt-5 text-center">
+            <div id="netflix" class="box row align-items-center g-5 my-5 left">
+                <div class="box-r col-md-6 order-1 order-md-0">
+                    <h3>Unlimited movies, TV shows, and more.</h3>
+                    <h5>Watch anywhere. Cancel anytime.</h5>
+                    <button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <a href="netflix.html">Buy your package</a>
+                    </button>
+                </div>
+                <div class="col-md-6 net-img">
+                    <img class="img-fluid shadow-lg rounded-3" src="images/netflix-min.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <hr>
+            <div id="amazon-prime" class="box row align-items-center g-5 my-5 right">
+
+                <div class="col-md-6">
+                    <img class="img-fluid shadow-lg rounded-3" src="images/amazon-prime-min.jpg" alt="" srcset="">
+                </div>
+                <div class="box-l col-md-6">
+                    <h3>Popular movies and shows</h3>
+                    <h5>New releases. Award-winning Amazon Originals. Watch what you love on your favorite devices.</h5>
+                    <button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <a href="amazon-prime.html">Buy your package</a>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div id="spotify" class="box row align-items-center g-5 my-5 left">
+                <div class="o-box box-r col-md-6 order-1 order-md-0">
+                    <h3>Spotify is all the music you'll ever need</h3>
+                    <button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <a href="spotify.html">Buy your package</a>
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid shadow-lg rounded-3" src="images/spotify-2-min.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <hr>
+            <div id="vpn" class="box row align-items-center g-5 my-5 right">
+                <div class="col-md-6">
+                    <img class="img-fluid shadow-lg rounded-3" src="images/vpn-min.jpg" alt="" srcset="">
+                </div>
+                <div class="box-l col-md-6">
+                    <h3>Premium VPN Features & Top-notch Security at the Lowest Price. </h3>
+                    <h5>Get Started Now. Improve Your Online Security & Privacy With the Best VPN.</h5>
+                    <button type="button" class="btn btn-danger mt-3" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        <a href="vpn.html">Buy your package</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid py-5 mb-0 text-dark">
+        <div class="footer-text">
+            <small>Copyright © 2022</small>
+            <br>
+            <small>Streaming BD</small>
+        </div>
+        <div class="footer-icons mt-3 d-flex justify-content-center">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook me-3"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram me-3"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter me-3"></i></a>
+        </div>
+
+
+        <!-- <div class="col-md-5 order-1 order-md-2 py-5 p-md-3">
+                <div class="footer-form">
+                    <h3 class="text-center my-2">Contact</h3>
+                    <div class="footer-container text-center text-light rounded-3 p-5">
+                        <p>Phone# 01712859699 </p>
+                        <p>Email: naimur.rahman900@gmail.com </p>
+                        <form action="https://formspree.io/f/{form_id}" method="post">
+                            <label for="email">Your Email</label>
+                            <input class="form-control" name="Email" id="email" type="email">
+                            <button class="my-3 btn btn-warning " type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+
+    </footer>
+
+
+    <!-- <script>
+        ScrollReveal({
+            reset: true,
+            distance: '80px',
+            duration: 2000,
+            delay: 200
+        });
+
+
+        ScrollReveal().reveal('.left', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.left img', { delay: 100, origin: 'top' });
+        ScrollReveal().reveal('.right', { delay: 100, origin: 'top' });
+        ScrollReveal().reveal('.right img', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.footer-form', { delay: 100, origin: 'bottom' });
+
+    </script> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
