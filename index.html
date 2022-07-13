@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/0c84c2f738.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <title>NAPS</title>
 </head>
 
@@ -16,26 +15,28 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg fw-bolder">
-            <a class="navbar-brand ms-5" href="#">NAPS</a>
-            <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse me-5" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#package-section">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#q&a">Q&A</a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#subscriptions">Subscriptions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#q&a">Q&A</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -73,12 +74,12 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Features -->
     <div class="container-fluid">
 
-        <div class="all-items  container text-light mt-5 text-center">
+        <div id="subscriptions" class="all-items  container text-light mt-5 text-center">
             <div id="netflix" class="box row align-items-center g-5 my-5 left">
                 <div class="box-r col-md-6 order-1 order-md-0">
                     <h3>Unlimited movies, TV shows, and more.</h3>
@@ -141,55 +142,48 @@
 
     <!-- Footer -->
     <footer class="container-fluid py-5 mb-0 text-dark">
-        <div class="footer-text">
-            <small>Copyright © 2022</small>
-            <br>
-            <small>Streaming BD</small>
-        </div>
-        <div class="footer-icons mt-3 d-flex justify-content-center">
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook me-3"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram me-3"></i></a>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter me-3"></i></a>
-        </div>
-
-
-        <!-- <div class="col-md-5 order-1 order-md-2 py-5 p-md-3">
-                <div class="footer-form">
-                    <h3 class="text-center my-2">Contact</h3>
-                    <div class="footer-container text-center text-light rounded-3 p-5">
-                        <p>Phone# 01712859699 </p>
-                        <p>Email: naimur.rahman900@gmail.com </p>
-                        <form action="https://formspree.io/f/{form_id}" method="post">
-                            <label for="email">Your Email</label>
-                            <input class="form-control" name="Email" id="email" type="email">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-6">
+                <div class="footer-text">
+                    <small>Copyright © 2022</small>
+                    <br>
+                    <small>Streaming BD</small>
+                </div>
+                <div class="footer-icons mt-3 d-flex justify-content-center">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook me-3"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram me-3"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter me-3"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="footer-form order-1 order-md-2 py-5 p-md-3">
+                    <h4 class="text-center">Contact</h4>
+                    <div class="d-flex flex-column align-items-center footer-container">
+                        <div class="text-center">
+                            <h6>Phone# 01712859699</h6>
+                            <h6>Email: naimur.rahman900@gmail.com </h6>
+                        </div>
+                        <form class="w-75" action="https://formspree.io/f/{form_id}" method="post">
+                            <input class="form-control mb-3" name="Email" placeholder="Your Mail" id="email" type="Email">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
                             <button class="my-3 btn btn-warning " type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
-            </div> -->
+            </div>
+        </div>
+
+
+
+
+
 
     </footer>
 
-
-    <!-- <script>
-        ScrollReveal({
-            reset: true,
-            distance: '80px',
-            duration: 2000,
-            delay: 200
-        });
-
-
-        ScrollReveal().reveal('.left', { delay: 100, origin: 'bottom' });
-        ScrollReveal().reveal('.left img', { delay: 100, origin: 'top' });
-        ScrollReveal().reveal('.right', { delay: 100, origin: 'top' });
-        ScrollReveal().reveal('.right img', { delay: 100, origin: 'bottom' });
-        ScrollReveal().reveal('.footer-form', { delay: 100, origin: 'bottom' });
-
-    </script> -->
-
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 
 </body>

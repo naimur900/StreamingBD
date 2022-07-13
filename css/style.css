@@ -1,10 +1,13 @@
 body{
     margin: 0;
     background-color: #02141b;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 header{
-    background-color: #6d976a;
+    background-color: #A10035
+    /* background-color: rgb(167, 211, 190);
+    background-color: #b39b95; */
+
 }
 header a{
     color: #000000 !important;
@@ -86,8 +89,8 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow-y: hidden;
-        overflow-anchor: none;
+        /* overflow-y: hidden; */
+        /* overflow-anchor: none; */
     }
 
     .box-r, .box-l{
@@ -97,6 +100,10 @@ footer{
     }
     .bkash-qr{
         width: 70%;
+    }
+    .bkash-form{
+        width: 75%;
+        margin: auto;
     }
   }
 
@@ -120,4 +127,5 @@ footer{
 .rmv-txt-dec{
     text-decoration: none;
 }
+
 
