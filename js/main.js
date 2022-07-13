@@ -1,7 +1,7 @@
-function toNetflix(){
-    document.getElementById("netflix")
-    window.location.href = "netflix.html";
-}
+// function toNetflix(){
+//     document.getElementById("netflix")
+//     window.location.href = "netflix.html";
+// }
 
 const boxes = document.querySelectorAll(".box");
 const checkBoxes = () => {
@@ -18,4 +18,4 @@ checkBoxes();
 
 
 
-p = document.getElementsByClassName("price")
+p = document.getElementById("nt-p1")
