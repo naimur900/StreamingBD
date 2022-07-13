@@ -15,3 +15,7 @@ const checkBoxes = () => {
 
 window.addEventListener("scroll", checkBoxes);
 checkBoxes();
+
+
+
+p = document.getElementsByClassName("price")
