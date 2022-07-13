@@ -74,6 +74,10 @@ footer{
     font-size: 20px;
 }
 
+.bkash-qr{
+    width: 35%;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -91,21 +95,24 @@ footer{
         width: 70%;
         
     }
+    .bkash-qr{
+        width: 70%;
+    }
   }
 
 
 /* scroll animations */
 .box{
-    transform: translateX(400%);
+    transform: translateY(22%);
     transition: transform 0.8s ease ;
 }
 
 .box:nth-of-type(even){
-    transform: translateX(-400%);
+    transform: translateY(-22%);
 }
 
 .box.show{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 
@@ -114,6 +121,3 @@ footer{
     text-decoration: none;
 }
 
-.bkash-qr{
-    width: 35%;
-}
