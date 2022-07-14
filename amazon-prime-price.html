@@ -13,11 +13,11 @@
 </head>
 
 
-<body class="netflix-body">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg fw-bolder">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">StreamingBD</a>
+                <a class="navbar-brand" href="#">Amazon Prime</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,12 +36,12 @@
         </nav>
     </header>
 
-    <h4 class="text-center my-5 package-heading">Spotify Packages</h4>
+    <!-- <h4 class="text-center my-5 package-heading">Amazon Prime Packages</h4> -->
     <div class="container card-container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card">
-                    <h2 id="sp-p1">65</h2>
+        <div id="amazon-prime" class="box row align-items-center g-0 my-5 left">
+            <div class="col-md-6 order-1 order-md-0">
+                <div class="card pr-card-r">
+                    <h2 id="ap-p">100</h2>
                     <h4>Taka/month (Renewable)</h4>
                     <hr>
                     <div>
@@ -61,75 +61,16 @@
                         </ul>
                     </div>
                     <script>
-                        var sp_p1 = document.getElementById("sp-p1").innerText;
+                        var price = document.getElementById("ap-p").innerText;
                     </script>
-                    <a onclick="purchase_price(sp_p1)"
-                        class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
-
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <h2 id="sp-p2">80</h2>
-                    <h4>Taka/month (Renewable)</h4>
-                    <hr>
-                    <div>
-                        <ul>
-                            <li>
-                                <h5>1 Profile</h5>
-                            </li>
-                            <li>
-                                <h5>Ultra HD 4k Supported</h5>
-                            </li>
-                            <li>
-                                <h5>Accessible to maximum 3 devies</h5>
-                            </li>
-                            <li>
-                                <h5>Extreme Clarity in sound</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <script>
-                        var sp_p2 = document.getElementById("sp-p2").innerText;
-                    </script>
-                    <a onclick="purchase_price(sp_p2)"
+                    <a onclick="purchase_price(price)"
                         class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div>
-                        <h2 id="sp-p3">150</h2>
-                        <h4>Taka/month (Renewable)</h4>
-                    </div>
-                    <hr>
-                    <div>
-                        <ul>
-                            <li>
-                                <h5>1 Profile</h5>
-                            </li>
-                            <li>
-                                <h5>Ultra HD 4k Supported</h5>
-                            </li>
-                            <li>
-                                <h5>Accessible to maximum 3 devies</h5>
-                            </li>
-                            <li>
-                                <h5>Extreme Clarity in sound</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <script>
-                        var sp_p3 = document.getElementById("sp-p3").innerText;
-                    </script>
-                    <a onclick="purchase_price(sp_p3)"
-                        class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
-
-                </div>
+            <div class="col-md-6 net-img pr-img-l">
+                <img class="img-fluid shadow-lg rounded-3" src="images/prime-price.jpg" alt="" srcset="">
             </div>
-
         </div>
-
     </div>
 
     <!-- Footer -->

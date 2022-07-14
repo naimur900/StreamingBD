@@ -37,7 +37,12 @@ header a{
 }
 .box-l{
     transform: translate(-80px);
-
+}
+.pr-card-r{
+    transform: translate(10%);
+}
+.pr-img-l{
+    transform: translate(-10%);
 }
 .card{
     height: 500px;
@@ -82,7 +87,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .right, .left{
         display: flex;
@@ -97,6 +102,15 @@ footer{
         transform: translate(0px, -80px);
         width: 70%;
         
+    }
+    .pr-card-r{
+        transform: translate(0px, -15%);
+        /* width: 70%; */
+    }
+    .pr-img-l{
+        transform: translate(0px, -15%);
+        width: 70%;
+
     }
     .bkash-qr{
         width: 70%;
