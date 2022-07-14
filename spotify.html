@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fw-bolder">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">StreamingBD</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -60,7 +60,11 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black" href="checkout.html">Purchase</a>
+                    <script>
+                        var sp_p1 = document.getElementById("sp-p1").innerText;
+                    </script>
+                    <a onclick="purchase_price(sp_p1)"
+                        class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
 
                 </div>
             </div>
@@ -85,8 +89,11 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black" href="checkout.html">Purchase</a>
-
+                    <script>
+                        var sp_p2 = document.getElementById("sp-p2").innerText;
+                    </script>
+                    <a onclick="purchase_price(sp_p2)"
+                        class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -112,7 +119,11 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black" href="checkout.html">Purchase</a>
+                    <script>
+                        var sp_p3 = document.getElementById("sp-p3").innerText;
+                    </script>
+                    <a onclick="purchase_price(sp_p3)"
+                        class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
 
                 </div>
             </div>

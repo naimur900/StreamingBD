@@ -16,26 +16,22 @@
 <body class="netflix-body">
     <header>
         <nav class="navbar navbar-expand-lg fw-bolder">
-            <a class="navbar-brand ms-5" href="#">NAPS</a>
-            <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse me-5" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#package-section">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#q&a">Q&A</a>
-                    </li>
-                </ul>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">StreamingBD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -49,9 +45,11 @@
                 <img class="img-fluid rounded-3" src="images/bkash.jpg" alt="" srcset="">
             </div>
             <div class="col-md-6">
-                <div class="bkash-form">
+                <div id="bkash-form">
                     <div class="nb text-center my-4">
-                        <small class="text-light">Kindly pay first and then fill up the form</small>
+                        <h1 class="text-light" id="subscription_price"></h1>
+                        <small class="text-light">Kindly pay first and then fill up the form</small><br>
+                        <small class="text-light">Your account along with the password will be mailed within an hour</small>
                     </div>
                     <form action="https://formspree.io/f/meqnbnzk" method="POST">
                         <div class="form-group my-3">
@@ -102,7 +100,7 @@
         </div>
 
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

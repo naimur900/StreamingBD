@@ -17,5 +17,8 @@ window.addEventListener("scroll", checkBoxes);
 checkBoxes();
 
 
+function purchase_price(p){
+    window.location.href="checkout.html?p="+p
+}
 
-p = document.getElementById("nt-p1")
+
