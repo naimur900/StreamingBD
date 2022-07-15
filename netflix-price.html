@@ -42,28 +42,30 @@
                 <div class="card pr-card-r">
                     <div class="row d-flex align-items-center justify-content-between">
                         <div class="col-7">
-                            <h2 id="nt-p">250</h2>
+                            <h2 id="price">250</h2>
                             <h4>Tk/month</h4>
                         </div>
                         <div class="col-5">
                             <h6 class="fw-lighter">Month(s)</h6>
-                            <select id="sl-month"
-                                class="form-select form-select-sm bg-secondary text-light"
-                                aria-label=".form-select-sm example">
-                                <!-- <option selected>Month</option> -->
-                                <option selected value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
+                            <form>
+                                <select id="sl-month" class="form-select form-select-sm bg-secondary text-light"
+                                    aria-label=".form-select-sm example">
+                                    <!-- <option selected>Month</option> -->
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </form>
+
                         </div>
                     </div>
                     <hr>
@@ -83,13 +85,8 @@
                             </li>
                         </ul>
                     </div>
-                    <script>
-                        const price = document.getElementById("nt-p").innerText;
-                        const month = document.getElementById('sl-month').value;
-                        const final_price = price + "*" + month;
-
-                    </script>
-                    <a onclick="purchase_price(final_price)"
+                    
+                    <a onclick="purchase_price()"
                         class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
                 </div>
             </div>

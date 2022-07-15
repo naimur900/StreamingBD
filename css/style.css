@@ -70,12 +70,9 @@ header a{
 
 footer{
     background-color: #6d976a;
-    margin-top: 120px !important;
+    margin-top: 120px;
 }
 
-.footer-icons, .footer-text{
-    text-align: center;
-}
 .footer-icons a{
     text-decoration: none;
     color: #000000;
@@ -140,4 +137,8 @@ footer{
 
 .rmv-txt-dec{
     text-decoration: none;
+}
+
+.mail-img{
+    filter: drop-shadow(0 0 10px white);
 }

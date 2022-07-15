@@ -8,8 +8,7 @@ for(let i=len-1; i>=0 ; i--){
     price = urlString[i]+price;
 }
 
-document.querySelector("#subscription_price").innerHTML = parseInt(price)  + " tk";
-// let price = document.getElementById('subscription_price').innerText;
+document.querySelector("#subscription_price").innerHTML = eval(price)  + " tk";
 document.getElementById("price-form").value = eval(price) ;
 
 

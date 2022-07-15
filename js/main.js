@@ -12,8 +12,12 @@ window.addEventListener("scroll", checkBoxes);
 checkBoxes();
 
 
-function purchase_price(final_price){
+function purchase_price(){
+    const init_price = document.getElementById("price").innerText;
+    const month = document.getElementById('sl-month').value;
+    const final_price = init_price + "*" + month;
     window.location.href="checkout.html?p="+final_price;
 }
+
 
 
