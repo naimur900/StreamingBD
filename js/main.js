@@ -1,8 +1,3 @@
-// function toNetflix(){
-//     document.getElementById("netflix")
-//     window.location.href = "netflix.html";
-// }
-
 const boxes = document.querySelectorAll(".box");
 const checkBoxes = () => {
     const triggerBotttom = (window.innerHeight / 5) * 4;
@@ -17,8 +12,8 @@ window.addEventListener("scroll", checkBoxes);
 checkBoxes();
 
 
-function purchase_price(p){
-    window.location.href="checkout.html?p="+p
+function purchase_price(final_price){
+    window.location.href="checkout.html?p="+final_price;
 }
 
 
