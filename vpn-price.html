@@ -41,8 +41,31 @@
         <div id="vpn" class="box row align-items-center g-0 my-5 left">
             <div class="col-md-6 order-1 order-md-0">
                 <div class="card pr-card-r">
-                    <h2 id="vp-p">120</h2>
-                    <h4>Taka/month (Renewable)</h4>
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-7">
+                            <h2 id="nt-p">250</h2>
+                            <h4>Tk/month</h4>
+                        </div>
+                        <div class="col-5">
+                            <h6 class="fw-lighter">Month(s)</h6>
+                            <select id="sl-month" class="form-select form-select-sm bg-secondary text-light"
+                                aria-label=".form-select-sm example">
+                                <!-- <option selected>Month</option> -->
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
                     <hr>
                     <div>
                         <ul>
@@ -61,9 +84,12 @@
                         </ul>
                     </div>
                     <script>
-                        var price = document.getElementById("vp-p").innerText;
+                        const price = document.getElementById("nt-p").innerText;
+                        const month = document.getElementById('sl-month').value;
+                        const final_price = price + "*" + month;
+
                     </script>
-                    <a onclick="purchase_price(price)"
+                    <a onclick="purchase_price(final_price)"
                         class="btn btn-warning w-50 mx-auto mt-3 rmv-txt-dec text-black">Purchase</a>
                 </div>
             </div>
