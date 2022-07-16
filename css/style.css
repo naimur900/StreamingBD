@@ -32,6 +32,15 @@ header a{
     z-index: 222;
 }
 
+.trans-box{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    z-index: 222;
+}
+
 .box-r{
     transform: translate(80px);
 }
